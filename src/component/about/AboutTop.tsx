@@ -16,7 +16,7 @@ function AboutTop() {
               <h2 className='text-4xl font-normal text-[#222222] mt-5 mb-10'>Welcome to Luviana Hotel Resort</h2>
               <p className='leading-6 text-[#5f5f5f] mb-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
               <p className='leading-6 text-[#5f5f5f] mb-5'>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <button className="bg-[#C1B086] text-white py-8 px-14 rounded-full">READ MORE</button>
+              <button className="bg-[#C1B086] text-white py-6 px-14 rounded-full">READ MORE</button>
             </div>
           </div>
         </div>

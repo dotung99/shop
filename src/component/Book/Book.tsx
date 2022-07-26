@@ -3,7 +3,7 @@ import React from 'react';
 function Book() {
     return (
         <div>
-            <section className=" mt-[44%] w-full h-[20vh]">
+            <section className="absolute my-[-5%] w-full h-[20vh]">
                 <div className="m-auto bg-[#242e5a] p-12 max-w-[80%] flex">
                 <div className="flex">
                     <div className="box">
