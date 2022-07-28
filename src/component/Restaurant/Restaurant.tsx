@@ -30,21 +30,21 @@ function Restaurant() {
   
     return (
         <section className="restaurant mt-[10%]" id="restaurant">
-    <div className="max-w-[80%] m-auto flex">
-      <div className="w-[50%]">
+    <div className="max-w-[100%] xl:max-w-[80%] m-auto md:flex">
+      <div className="md:w-1/2">
         <img src="./image/re.jpg" className='w-full h-full' alt=""/>
       </div>
-      <div className="w-1/2 px-32">
-        <div className="text">
-          <h2 className="mb-5 text-3xl">Our Restaurant</h2>
-          <p className="mb-5 text-xl leading-10"> Excepteur sint occaecat cupidatat non proident, 
+      <div className="md:w-1/2 lg:px-32">
+        <div className="text-center">
+          <h2 className="mb-5 text-3xl ">Our Restaurant</h2>
+          <p className="mb-5 text-sm mx-5 leading-10"> Excepteur sint occaecat cupidatat non proident, 
           sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
-        <div className="accordionWrapper">
+        <div className="">
           {Item.map((item: any,i:any) =>
-           <div className="accordionItem open" key={i}>
+           <div className="text-center" key={i}>
             <h2 className={openDesc.id === i ? "":"accordionIHeading text-[#C1B086]"} onClick={() => handleOpenDesc(i)}>{item.title}</h2>
-           <div className="accordionItemContent shadow-2xl font-normal">
+           <div className="shadow-2xl font-normal">
            {openDesc &&  <p className="px-6 py-10">{openDesc.desc}</p>}
            </div>
          </div>

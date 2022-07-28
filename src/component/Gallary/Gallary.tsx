@@ -4,26 +4,55 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function Gallary() {
+
   const settings = {
     dots: false,
     infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1
+    autoPlaySpeed:true,
+    speed: 100,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
   const imgItem = [
     {img:'./image/g1.jpg'},{img:'./image/g2.jpg'},{img:'./image/g3.jpg'},{img:'./image/g4.jpg'},
     {img:'./image/g5.jpg'},{img:'./image/g6.jpg'},{img:'./image/g7.jpg'},{img:'./image/g8.jpg'}]
     return (
-        <section className="mt-[5%]" id="gallary">
-        <div className="max-w-[80%] m-auto">
-          <div className="heading_top flex justify-between mb-[4%]">
-            <div className="heading">
-              <h5 className='text-xl leading-10 text-[#5f5f5f]'>WELCOME TO OUR PHOTO GALLERY</h5>
-              <h2 className='text-4xl'>Photo Gallery of Our Hotel</h2>
+        <section className="mt-[5%]" id="gallery">
+        <div className="lg:max-w-[80%] max-w-[100%] m-auto">
+          <div className="text-center lg:flex justify-between mb-[4%]">
+            <div className="">
+              <h5 className='text-base leading-10 text-[#5f5f5f]'>WELCOME TO OUR PHOTO GALLERY</h5>
+              <h2 className='text-2xl mb-5'>Photo Gallery of Our Hotel</h2>
             </div>
             <div className="button">
-              <button className="bg-[#C1B086] text-white py-6 px-14 rounded-full">VIEW GALLERY</button>
+              <button className="bg-[#C1B086] text-white py-3 px-8 rounded-full hover:bg-orange-700">VIEW GALLERY</button>
             </div>
           </div>
           <Slider {...settings}>
